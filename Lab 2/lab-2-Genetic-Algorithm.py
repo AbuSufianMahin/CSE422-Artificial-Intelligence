@@ -116,7 +116,8 @@ for i in range(max_generations):
 
     os_population = []
 
-    while len(os_population) < len(population): #ensuring that offspringCount == parentCount
+    # for i in population: #every possible combinations of parent to make offspring
+    while len(os_population)<len(population):  #ensuring that offspringCount == parentCount
         p1_index, p2_index = random.sample(range(0, len(population)), 2)
 
         os1, os2 = single_point_crossover(population[p1_index], population[p2_index])
@@ -165,3 +166,4 @@ offspring1, offspring2  = two_point_crossover(random_p1, random_p2)
 
 print(offspring1)
 print(offspring2)
+
