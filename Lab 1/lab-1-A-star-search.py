@@ -80,7 +80,7 @@ def A_star_search(start, target, map, heuristic):
     else:
         return "Path not fount"
 
-input_file = open(r"Python\cse422 - Artificial Inteligence\Lab 1\input_file.txt", 'r')
+input_file = open('Lab 1\input_file.txt', 'r')
 heuristic_table, given_graph = data_extraction(input_file)
 
 city_from = input("Start Node: ")

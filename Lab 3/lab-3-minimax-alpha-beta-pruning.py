@@ -2,8 +2,6 @@ import math
 import random
 
 # part - 1
-
-
 def strength(x):
     return math.log2(x+1) + x/2
 
